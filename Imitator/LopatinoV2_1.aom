@@ -2897,7 +2897,7 @@ AOModeler 4.0
           значение c датчика: TQJoint | Double;100;;
         end
         ¤скорость: TJntGroup
-          регулировка: TIJoint | Double;10;;
+          регулировка: TIJoint | Double;0;;
           амплитуда регулировки: TIJoint | Double;10;;
           время разгона (мс): TIJoint | Longint;200;;
           значение: TQJoint | Double;0;;
@@ -3011,13 +3011,13 @@ AOModeler 4.0
           время открытия/закрытия (мс): TIJoint | Longint;10000;;
           время схода с конечников (мс): TIJoint | Longint;2000;;
           время восстановления цепей (мс): TIJoint | Longint;200;;
-          значение (% закрытия): TQJoint | Double;0;;
+          значение (% закрытия): TQJoint | Double;100;;
           усиление датчика: TIJoint | Double;-1;;
           смещение датчика: TIJoint | Double;100;;
-          значение c датчика: TQJoint | Double;100;;
+          значение c датчика: TQJoint | Double;0;;
         end
         ¤скорость: TJntGroup
-          регулировка: TIJoint | Double;0;;
+          регулировка: TIJoint | Double;-10;;
           амплитуда регулировки: TIJoint | Double;10;;
           время разгона (мс): TIJoint | Longint;200;;
           значение: TQJoint | Double;0;;
@@ -3032,20 +3032,20 @@ AOModeler 4.0
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
         сработала муфта: TQJoint | Boolean;0;1;
-        открыто: TQJoint | Boolean;1;;
-        не открыто: TQJoint | Boolean;0;;
+        открыто: TQJoint | Boolean;0;;
+        не открыто: TQJoint | Boolean;1;;
         открывается: TQJoint | Boolean;0;;
-        целостность цепей открытия: TQJoint | Boolean;0;;
-        закрыто: TQJoint | Boolean;0;;
-        не закрыто: TQJoint | Boolean;1;;
+        целостность цепей открытия: TQJoint | Boolean;1;;
+        закрыто: TQJoint | Boolean;1;;
+        не закрыто: TQJoint | Boolean;0;;
         закрывается: TQJoint | Boolean;0;;
-        целостность цепей закрытия: TQJoint | Boolean;1;;
+        целостность цепей закрытия: TQJoint | Boolean;0;;
         в промежутке: TQJoint | Boolean;0;;
         в движении: TQJoint | Boolean;0;;
         остановлена: TQJoint | Boolean;1;;
         неисправность цепей управления: TQJoint | Boolean;0;;
         входной поток: TIJoint | Double;10;;
-        выходной поток: TQJoint | Double;10;;
+        выходной поток: TQJoint | Double;0;;
       end
       Приёмная задвижка №036.2.1 OrStop: TOr
         входы: TJntGroup
@@ -3091,7 +3091,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3151,7 +3151,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3211,7 +3211,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3267,11 +3267,11 @@ AOModeler 4.0
         ¤закрывать: TMJoint | Boolean;0;;
         открыть (с самоподхватом): TMJoint | Boolean;0;;..\..\Дешифраторы\Модуль DO №8\бит 8
         закрыть (с самоподхватом): TMJoint | Boolean;0;;..\..\Дешифраторы\Модуль DO №8\бит 9
-        стоп: TMJoint | Boolean;1;;..\Приёмная задвижка №036.4.1 OrStop\выход
+        стоп: TMJoint | Boolean;0;;..\Приёмная задвижка №036.4.1 OrStop\выход
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3290,10 +3290,10 @@ AOModeler 4.0
       Приёмная задвижка №036.4.1 OrStop: TOr
         входы: TJntGroup
           вход 1: TIJoint | Boolean;0;;..\..\..\Дешифраторы\Модуль DO №8\бит 10
-          вход 2: TIJoint | Boolean;1;;..\..\..\Дешифраторы\Модуль DO №8\бит 11
+          вход 2: TIJoint | Boolean;0;;..\..\..\Дешифраторы\Модуль DO №8\бит 11
         end
-        выход: TQJoint | Boolean;1;;
-        инверсный выход: TQJoint | Boolean;0;;
+        выход: TQJoint | Boolean;0;;
+        инверсный выход: TQJoint | Boolean;1;;
       end
       Выкидная задвижка №036.4.2: TValve
         режим управления: TJntGroup
@@ -3327,11 +3327,11 @@ AOModeler 4.0
         ¤закрывать: TMJoint | Boolean;0;;
         открыть (с самоподхватом): TMJoint | Boolean;0;;..\..\Дешифраторы\Модуль DO №8\бит 12
         закрыть (с самоподхватом): TMJoint | Boolean;0;;..\..\Дешифраторы\Модуль DO №8\бит 13
-        стоп: TMJoint | Boolean;1;;..\Выкидная задвижка №036.4.2 OrStop\выход
+        стоп: TMJoint | Boolean;0;;..\Выкидная задвижка №036.4.2 OrStop\выход
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3350,10 +3350,10 @@ AOModeler 4.0
       Выкидная задвижка №036.4.2 OrStop: TOr
         входы: TJntGroup
           вход 1: TIJoint | Boolean;0;;..\..\..\Дешифраторы\Модуль DO №8\бит 14
-          вход 2: TIJoint | Boolean;1;;..\..\..\Дешифраторы\Модуль DO №8\бит 15
+          вход 2: TIJoint | Boolean;0;;..\..\..\Дешифраторы\Модуль DO №8\бит 15
         end
-        выход: TQJoint | Boolean;1;;
-        инверсный выход: TQJoint | Boolean;0;;
+        выход: TQJoint | Boolean;0;;
+        инверсный выход: TQJoint | Boolean;1;;
       end
       Задвижка №007.1.1: TValve
         режим управления: TJntGroup
@@ -3391,7 +3391,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3443,7 +3443,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3495,7 +3495,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3547,7 +3547,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3599,7 +3599,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3651,7 +3651,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3703,7 +3703,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3755,7 +3755,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3807,7 +3807,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3859,7 +3859,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3911,7 +3911,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -3963,7 +3963,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -4015,7 +4015,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -4067,7 +4067,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -4119,7 +4119,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -4171,7 +4171,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;1;1;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;0;
         открывается: TQJoint | Boolean;0;;
@@ -4179,11 +4179,11 @@ AOModeler 4.0
         закрыто: TQJoint | Boolean;0;;
         не закрыто: TQJoint | Boolean;1;;
         закрывается: TQJoint | Boolean;0;;
-        целостность цепей закрытия: TQJoint | Boolean;0;;
+        целостность цепей закрытия: TQJoint | Boolean;1;;
         в промежутке: TQJoint | Boolean;0;;
         в движении: TQJoint | Boolean;0;;
         остановлена: TQJoint | Boolean;1;;
-        неисправность цепей управления: TQJoint | Boolean;1;;
+        неисправность цепей управления: TQJoint | Boolean;0;;
         входной поток: TIJoint | Double;10;;
         выходной поток: TQJoint | Double;10;;
       end
@@ -4223,7 +4223,7 @@ AOModeler 4.0
         запрет открытия: TIJoint | Boolean;0;;
         запрет закрытия: TIJoint | Boolean;0;;
         предельный момент: TIJoint | Boolean;0;;
-        сработала муфта: TQJoint | Boolean;0;0;
+        сработала муфта: TQJoint | Boolean;0;1;
         открыто: TQJoint | Boolean;1;;
         не открыто: TQJoint | Boolean;0;;
         открывается: TQJoint | Boolean;0;;
@@ -4400,7 +4400,7 @@ AOModeler 4.0
         бит 31: TIJoint | Boolean;0;;
       end
       Модуль DI №3: TBitToInt
-        выход: TQJoint | Longint;88656896;;
+        выход: TQJoint | Longint;84462592;;
         бит 0: TIJoint | Boolean;0;;..\..\ДП\Наличие питания на вводе 2 шкафа ССН.УСО.2(1)\выход
         бит 1: TIJoint | Boolean;0;;..\..\ДП\Общая неисправность системы питания шкафа ССН.УСО.2(1)\выход
         бит 2: TIJoint | Boolean;0;;..\..\ДП\Неисправность оборудования питания (резервный канал) шкафа ССН.УСО.2(1)\выход
@@ -4423,7 +4423,7 @@ AOModeler 4.0
         бит 19: TIJoint | Boolean;1;;..\..\ЗДВ\Задвижка №024.1\не закрыто
         бит 20: TIJoint | Boolean;0;;..\..\ЗДВ\Задвижка №024.1\открывается
         бит 21: TIJoint | Boolean;0;;..\..\ЗДВ\Задвижка №024.1\закрывается
-        бит 22: TIJoint | Boolean;1;;..\..\ЗДВ\Задвижка №024.1\сработала муфта
+        бит 22: TIJoint | Boolean;0;;..\..\ЗДВ\Задвижка №024.1\сработала муфта
         бит 23: TIJoint | Boolean;0;;
         бит 24: TIJoint | Boolean;1;;..\..\ЗДВ\Задвижка №024.1\режим управления\дистанционный
         бит 25: TIJoint | Boolean;0;;..\..\ЗДВ\Задвижка №007.2.1\не открыто
@@ -4750,7 +4750,7 @@ AOModeler 4.0
         бит 31: TIJoint | Boolean;0;;
       end
       Модуль DI №13: TBitToInt
-        выход: TQJoint | Longint;532992;;
+        выход: TQJoint | Longint;528896;;
         бит 0: TIJoint | Boolean;0;;..\..\ДП\Наличие питания на вводе 2 шкафа ССН.УСО.2(3)\выход
         бит 1: TIJoint | Boolean;0;;..\..\ДП\Общая неисправность системы питания шкафа ССН.УСО.2(3)\выход
         бит 2: TIJoint | Boolean;0;;..\..\ДП\Неисправность оборудования питания (резервный канал) шкафа ССН.УСО.2(3)\выход
@@ -4763,8 +4763,8 @@ AOModeler 4.0
         бит 9: TIJoint | Boolean;1;;..\..\МНС\ПНА №34.2\ВВ\Состояние ВВ Включен\выход
         бит 10: TIJoint | Boolean;0;;..\..\ДП\ПНА №036.2 Авария ПЧ\выход
         бит 11: TIJoint | Boolean;0;;..\..\ДП\ПНА №036.2 Тепловая защита электродвигателя\выход
-        бит 12: TIJoint | Boolean;0;;..\..\ЗДВ\Приёмная задвижка №036.2.1\не открыто
-        бит 13: TIJoint | Boolean;1;;..\..\ЗДВ\Приёмная задвижка №036.2.1\не закрыто
+        бит 12: TIJoint | Boolean;1;;..\..\ЗДВ\Приёмная задвижка №036.2.1\не открыто
+        бит 13: TIJoint | Boolean;0;;..\..\ЗДВ\Приёмная задвижка №036.2.1\не закрыто
         бит 14: TIJoint | Boolean;0;;..\..\ЗДВ\Приёмная задвижка №036.2.1\открывается
         бит 15: TIJoint | Boolean;0;;..\..\ЗДВ\Приёмная задвижка №036.2.1\закрывается
         бит 16: TIJoint | Boolean;0;;..\..\ЗДВ\Приёмная задвижка №036.2.1\сработала муфта
@@ -7165,11 +7165,11 @@ AOModeler 4.0
         бит 31: TIJoint | Boolean;0;;
       end
       ЧРП 4: TBitToInt
-        выход: TQJoint | Longint;70;;
+        выход: TQJoint | Longint;76;;
         бит 0: TIJoint | Boolean;0;;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Неисправность датчика частоты\выход
-        бит 1: TIJoint | Boolean;1;;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Вращение вперед\питание подано
+        бит 1: TIJoint | Boolean;0;;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Вращение вперед\питание подано
         бит 2: TIJoint | Boolean;1;0;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Дистанционное управление\выход
-        бит 3: TIJoint | Boolean;0;0;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Готов к пуску\выход
+        бит 3: TIJoint | Boolean;1;0;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Готов к пуску\выход
         бит 4: TIJoint | Boolean;0;;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Авария\выход
         бит 5: TIJoint | Boolean;0;;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Неисправность\выход
         бит 6: TIJoint | Boolean;1;;..\..\МНС\ПНА №35.4\ЧРП Сигналы\Наличие связи\выход
@@ -7272,8 +7272,8 @@ AOModeler 4.0
     end
     Дешифраторы: TGroup
       Модуль DO №1: TIntToBit
-        вход: TIJoint | Longint;0;0;..\..\KC\станции\255\4x37774..37775
-        бит 0: TQJoint | Boolean;0;;
+        вход: TIJoint | Longint;1;0;..\..\KC\станции\255\4x37774..37775
+        бит 0: TQJoint | Boolean;1;;
         бит 1: TQJoint | Boolean;0;;
         бит 2: TQJoint | Boolean;0;;
         бит 3: TQJoint | Boolean;0;;
@@ -7517,8 +7517,8 @@ AOModeler 4.0
         бит 31: TQJoint | Boolean;0;;
       end
       Модуль DO №8: TIntToBit
-        вход: TIJoint | Longint;34817;;..\..\KC\станции\255\4x37788..37789
-        бит 0: TQJoint | Boolean;1;;
+        вход: TIJoint | Longint;0;;..\..\KC\станции\255\4x37788..37789
+        бит 0: TQJoint | Boolean;0;;
         бит 1: TQJoint | Boolean;0;;
         бит 2: TQJoint | Boolean;0;;
         бит 3: TQJoint | Boolean;0;;
@@ -7529,11 +7529,11 @@ AOModeler 4.0
         бит 8: TQJoint | Boolean;0;;
         бит 9: TQJoint | Boolean;0;;
         бит 10: TQJoint | Boolean;0;;
-        бит 11: TQJoint | Boolean;1;;
+        бит 11: TQJoint | Boolean;0;;
         бит 12: TQJoint | Boolean;0;;
         бит 13: TQJoint | Boolean;0;;
         бит 14: TQJoint | Boolean;0;;
-        бит 15: TQJoint | Boolean;1;;
+        бит 15: TQJoint | Boolean;0;;
         бит 16: TQJoint | Boolean;0;;
         бит 17: TQJoint | Boolean;0;;
         бит 18: TQJoint | Boolean;0;;
@@ -8672,7 +8672,7 @@ AOModeler 4.0
         бит 31: TQJoint | Boolean;0;;
       end
       Модуль DI №3: TIntToBit
-        вход: TIJoint | Longint;88656896;;..\..\Шифраторы\Модуль DI №3\выход
+        вход: TIJoint | Longint;84462592;;..\..\Шифраторы\Модуль DI №3\выход
         бит 0: TQJoint | Boolean;0;;
         бит 1: TQJoint | Boolean;0;;
         бит 2: TQJoint | Boolean;0;;
@@ -8695,7 +8695,7 @@ AOModeler 4.0
         бит 19: TQJoint | Boolean;1;;
         бит 20: TQJoint | Boolean;0;;
         бит 21: TQJoint | Boolean;0;;
-        бит 22: TQJoint | Boolean;1;;
+        бит 22: TQJoint | Boolean;0;;
         бит 23: TQJoint | Boolean;0;;
         бит 24: TQJoint | Boolean;1;;
         бит 25: TQJoint | Boolean;0;;
@@ -8847,7 +8847,7 @@ AOModeler 4.0
         бит 31: TQJoint | Boolean;0;;
       end
       Модуль DI №13: TIntToBit
-        вход: TIJoint | Longint;532992;;..\..\Шифраторы\Модуль DI №13\выход
+        вход: TIJoint | Longint;528896;;..\..\Шифраторы\Модуль DI №13\выход
         бит 0: TQJoint | Boolean;0;;
         бит 1: TQJoint | Boolean;0;;
         бит 2: TQJoint | Boolean;0;;
@@ -8860,8 +8860,8 @@ AOModeler 4.0
         бит 9: TQJoint | Boolean;1;;
         бит 10: TQJoint | Boolean;0;;
         бит 11: TQJoint | Boolean;0;;
-        бит 12: TQJoint | Boolean;0;;
-        бит 13: TQJoint | Boolean;1;;
+        бит 12: TQJoint | Boolean;1;;
+        бит 13: TQJoint | Boolean;0;;
         бит 14: TQJoint | Boolean;0;;
         бит 15: TQJoint | Boolean;0;;
         бит 16: TQJoint | Boolean;0;;
@@ -8952,7 +8952,7 @@ AOModeler 4.0
         бит 31: TQJoint | Boolean;0;;
       end
       Модуль команд: TIntToBit
-        вход: TIJoint | Longint;4096;;..\..\KC\станции\255\4x01101
+        вход: TIJoint | Longint;0;;..\..\KC\станции\255\4x01101
         бит 0: TQJoint | Boolean;0;;
         бит 1: TQJoint | Boolean;0;;
         бит 2: TQJoint | Boolean;0;;
@@ -8965,7 +8965,7 @@ AOModeler 4.0
         бит 9: TQJoint | Boolean;0;;
         бит 10: TQJoint | Boolean;0;;
         бит 11: TQJoint | Boolean;0;;
-        бит 12: TQJoint | Boolean;1;;
+        бит 12: TQJoint | Boolean;0;;
         бит 13: TQJoint | Boolean;0;;
         бит 14: TQJoint | Boolean;0;;
         бит 15: TQJoint | Boolean;0;;
@@ -9291,15 +9291,15 @@ AOModeler 4.0
       Счетчик циклов модели: TCalc
         выражение: TIJoint | String;(x1+1) - abs(x1=30)*30;;
         переменные: TJntGroup
-          x1: TIJoint | Double;4;;..\результат
+          x1: TIJoint | Double;25;;..\результат
           x2: TIJoint | Double;0;;
         end
-        результат: TQJoint | Double;5;;
+        результат: TQJoint | Double;26;;
       end
       Генератор импульсов 2с: TCalc
         выражение: TIJoint | String;abs((x1=10) or (x1=20) or (x1=30));;
         переменные: TJntGroup
-          x1: TIJoint | Double;4;;..\..\Счетчик циклов модели\результат
+          x1: TIJoint | Double;25;;..\..\Счетчик циклов модели\результат
           x2: TIJoint | Double;0;;
         end
         результат: TQJoint | Double;0;;
@@ -9307,9 +9307,9 @@ AOModeler 4.0
       Счетчик КС и САРД: TCalc
         выражение: TIJoint | String;(x1*10 and 255)/10 +  0.1;;
         переменные: TJntGroup
-          x1: TIJoint | Double;3,4;;..\результат
+          x1: TIJoint | Double;18,5;;..\результат
         end
-        результат: TQJoint | Double;3,5;;
+        результат: TQJoint | Double;18,6;;
       end
       ПНА №34.2: TGroup
         Сила тока: TScaler
@@ -9913,13 +9913,13 @@ AOModeler 4.0
       end
       ПНА №35.4: TGroup
         Сила тока: TScaler
-          вход: TIJoint | Double;300;;..\Перекладка тока\результат
+          вход: TIJoint | Double;0;;..\Перекладка тока\результат
           минимум входа: TMJoint | Double;0;;
           максимум входа: TMJoint | Double;300;;
           минимум выхода: TMJoint | Double;4000;;
           максимум выхода: TMJoint | Double;20000;;
           усекать значение: TIJoint | Boolean;0;;
-          выход: TQJoint | Double;20000;;
+          выход: TQJoint | Double;4000;;
           значение достоверно: TQJoint | Boolean;1;;
           ниже минимума (обрыв): TQJoint | Boolean;0;;
           выше макимума (КЗ): TQJoint | Boolean;0;;
@@ -9938,13 +9938,13 @@ AOModeler 4.0
         end
         ЧРП Сигналы: TGroup
           Частота(аналог): TScaler
-            вход: TIJoint | Double;1500;0;..\..\Перекладка частоты\результат
+            вход: TIJoint | Double;0;0;..\..\Перекладка частоты\результат
             минимум входа: TMJoint | Double;0;;
             максимум входа: TMJoint | Double;3000;;
             минимум выхода: TMJoint | Double;4000;;
             максимум выхода: TMJoint | Double;20000;;
             усекать значение: TIJoint | Boolean;0;;
-            выход: TQJoint | Double;12000;0;
+            выход: TQJoint | Double;4000;0;
             значение достоверно: TQJoint | Boolean;1;;
             ниже минимума (обрыв): TQJoint | Boolean;0;;
             выше макимума (КЗ): TQJoint | Boolean;0;;
@@ -9957,42 +9957,42 @@ AOModeler 4.0
               максимально аварийное значение: TQJoint | Boolean;1;;
               максимально предельное значение: TQJoint | Boolean;1;;
               нормальное значение: TQJoint | Boolean;0;;
-              минимально предельное значение: TQJoint | Boolean;0;;
+              минимально предельное значение: TQJoint | Boolean;1;;
               минимально аварийное значение: TQJoint | Boolean;0;;
             end
           end
           Частота(Интерфейс): TScaler
-            вход: TIJoint | Double;1500;0;..\..\Перекладка частоты\результат
+            вход: TIJoint | Double;0;0;..\..\Перекладка частоты\результат
             минимум входа: TMJoint | Double;0;;
             максимум входа: TMJoint | Double;100;;
             минимум выхода: TMJoint | Double;0;;
             максимум выхода: TMJoint | Double;100;;
             усекать значение: TIJoint | Boolean;0;;
-            выход: TQJoint | Double;1500;0;
-            значение достоверно: TQJoint | Boolean;0;;
+            выход: TQJoint | Double;0;0;
+            значение достоверно: TQJoint | Boolean;1;;
             ниже минимума (обрыв): TQJoint | Boolean;0;;
-            выше макимума (КЗ): TQJoint | Boolean;1;;
-            выход за ранги пересчета: TQJoint | Boolean;1;;
+            выше макимума (КЗ): TQJoint | Boolean;0;;
+            выход за ранги пересчета: TQJoint | Boolean;0;;
             пределы: TJntGroup
               уставка максимально аварийная: TMJoint | Double;95;;
               уставка максимально предельная: TMJoint | Double;90;;
               уставка минимально предельная: TMJoint | Double;4100;;
               уставка минимально аварийная: TMJoint | Double;5;;
-              максимально аварийное значение: TQJoint | Boolean;1;;
-              максимально предельное значение: TQJoint | Boolean;1;;
+              максимально аварийное значение: TQJoint | Boolean;0;;
+              максимально предельное значение: TQJoint | Boolean;0;;
               нормальное значение: TQJoint | Boolean;0;;
               минимально предельное значение: TQJoint | Boolean;1;;
-              минимально аварийное значение: TQJoint | Boolean;0;;
+              минимально аварийное значение: TQJoint | Boolean;1;;
             end
           end
           Текущее задание частоты(аналог): TScaler
-            вход: TIJoint | Double;1500;;..\..\Перекладка задания частоты\результат
+            вход: TIJoint | Double;0;;..\..\Перекладка задания частоты\результат
             минимум входа: TMJoint | Double;0;;
             максимум входа: TMJoint | Double;3000;;
             минимум выхода: TMJoint | Double;4000;;
             максимум выхода: TMJoint | Double;20000;0;
             усекать значение: TIJoint | Boolean;0;;
-            выход: TQJoint | Double;12000;0;
+            выход: TQJoint | Double;4000;0;
             значение достоверно: TQJoint | Boolean;1;;
             ниже минимума (обрыв): TQJoint | Boolean;0;;
             выше макимума (КЗ): TQJoint | Boolean;0;;
@@ -10010,27 +10010,27 @@ AOModeler 4.0
             end
           end
           Текущее задание частоты(интерфейс): TScaler
-            вход: TIJoint | Double;1500;;..\..\Перекладка задания частоты\результат
+            вход: TIJoint | Double;0;;..\..\Перекладка задания частоты\результат
             минимум входа: TMJoint | Double;0;;
             максимум входа: TMJoint | Double;100;;
             минимум выхода: TMJoint | Double;0;;
             максимум выхода: TMJoint | Double;100;;
             усекать значение: TIJoint | Boolean;0;;
-            выход: TQJoint | Double;1500;0;
-            значение достоверно: TQJoint | Boolean;0;;
+            выход: TQJoint | Double;0;0;
+            значение достоверно: TQJoint | Boolean;1;;
             ниже минимума (обрыв): TQJoint | Boolean;0;;
-            выше макимума (КЗ): TQJoint | Boolean;1;;
-            выход за ранги пересчета: TQJoint | Boolean;1;;
+            выше макимума (КЗ): TQJoint | Boolean;0;;
+            выход за ранги пересчета: TQJoint | Boolean;0;;
             пределы: TJntGroup
               уставка максимально аварийная: TMJoint | Double;95;;
               уставка максимально предельная: TMJoint | Double;90;;
               уставка минимально предельная: TMJoint | Double;10;;
               уставка минимально аварийная: TMJoint | Double;5;;
-              максимально аварийное значение: TQJoint | Boolean;1;;
-              максимально предельное значение: TQJoint | Boolean;1;;
+              максимально аварийное значение: TQJoint | Boolean;0;;
+              максимально предельное значение: TQJoint | Boolean;0;;
               нормальное значение: TQJoint | Boolean;0;;
-              минимально предельное значение: TQJoint | Boolean;0;;
-              минимально аварийное значение: TQJoint | Boolean;0;;
+              минимально предельное значение: TQJoint | Boolean;1;;
+              минимально аварийное значение: TQJoint | Boolean;1;;
             end
           end
           Неисправность датчика частоты: TKnob
@@ -10039,9 +10039,9 @@ AOModeler 4.0
             деблокировка: TIJoint | Boolean;0;;
           end
           Вращение вперед: TLamp
-            включить: TIJoint | Boolean;1;;..\..\ЧРП\включен
-            питание подано: TQJoint | Boolean;1;;
-            целостность цепей: TQJoint | Boolean;0;;
+            включить: TIJoint | Boolean;0;;..\..\ЧРП\включен
+            питание подано: TQJoint | Boolean;0;;
+            целостность цепей: TQJoint | Boolean;1;;
           end
           Дистанционное управление: TKnob
             выход: TQJoint | Boolean;1;1;
@@ -10053,10 +10053,10 @@ AOModeler 4.0
               вход 1: TIJoint | Boolean;1;;..\..\Неисправность\инверсный выход
               вход 2: TIJoint | Boolean;1;;..\..\Авария\инверсный выход
               вход 3: TIJoint | Boolean;1;;..\..\..\ВВ\Состояние ВВ Включен\выход
-              вход 4: TIJoint | Boolean;0;;..\..\Частота(аналог)\пределы\минимально предельное значение
+              вход 4: TIJoint | Boolean;1;;..\..\Частота(аналог)\пределы\минимально предельное значение
             end
-            выход: TQJoint | Boolean;0;0;
-            инверсный выход: TQJoint | Boolean;1;;
+            выход: TQJoint | Boolean;1;0;
+            инверсный выход: TQJoint | Boolean;0;;
           end
           Авария: TKnob
             выход: TQJoint | Boolean;0;0;
@@ -10140,22 +10140,22 @@ AOModeler 4.0
             ¤двигатель запитан: TQJoint | Boolean;1;;
           end
           время переключения контактов (мс): TIJoint | Longint;500;;
-          включить: TMJoint | Boolean;1;0;..\Команды пуск\результат
+          включить: TMJoint | Boolean;0;0;..\Команды пуск\результат
           включить (с самоподхватом): TMJoint | Boolean;0;;
           отключить: TMJoint | Boolean;0;0;
-          включен: TQJoint | Boolean;1;0;
-          целостность цепи включения: TQJoint | Boolean;0;;
-          отключен: TQJoint | Boolean;0;;
-          целостность цепи отключения: TQJoint | Boolean;1;;
+          включен: TQJoint | Boolean;0;0;
+          целостность цепи включения: TQJoint | Boolean;1;;
+          отключен: TQJoint | Boolean;1;;
+          целостность цепи отключения: TQJoint | Boolean;0;;
           неисправность цепей управления: TQJoint | Boolean;0;;
           сила тока: TJntGroup
             время нарастания (мс): TIJoint | Longint;4000;;
             время спада (мс): TIJoint | Longint;4000;;
             значение в установившемся режиме: TIJoint | Double;1500;;
-            значение: TQJoint | Double;1500;0;
+            значение: TQJoint | Double;0;0;
             усиление датчика: TIJoint | Double;0,2;;
             смещение датчика: TIJoint | Double;0;;
-            значение с датчика: TQJoint | Double;300;;
+            значение с датчика: TQJoint | Double;0;;
           end
         end
         Команды пуск: TCalc
@@ -10163,12 +10163,12 @@ AOModeler 4.0
           переменные: TJntGroup
             x1: TIJoint | Double;1;;..\..\ВВ\Состояние ВВ Включен\выход
             x2: TIJoint | Double;0;;..\..\ЧРП Сигналы\Авария\выход
-            x3: TIJoint | Double;1;;..\..\..\..\Дешифраторы\Модуль команд\бит 12
+            x3: TIJoint | Double;0;;..\..\..\..\Дешифраторы\Модуль команд\бит 12
             x4: TIJoint | Double;1;;..\..\ЧРП Сигналы\Дистанционное управление\выход
             x5: TIJoint | Double;1;;..\..\ЧРП Сигналы\Дистанционное управление\выход
             x6: TIJoint | Double;0;;..\..\Пуск в местном\выход
           end
-          результат: TQJoint | Double;1;;
+          результат: TQJoint | Double;0;;
         end
         Перекладка частоты: TCalc
           выражение: TIJoint | String;if(x1 and not x2 and not x3,x4,x5);;
@@ -10176,29 +10176,29 @@ AOModeler 4.0
             x1: TIJoint | Double;0;;..\..\..\Генератор импульсов 2с\результат
             x2: TIJoint | Double;0;;..\..\ЧРП Сигналы\Неисправность датчика частоты\выход
             x3: TIJoint | Double;0;;..\..\ЧРП Сигналы\Неисправность\выход
-            x4: TIJoint | Double;1500;;..\..\ЧРП\сила тока\значение
-            x5: TIJoint | Double;1500;;..\результат
+            x4: TIJoint | Double;0;;..\..\ЧРП\сила тока\значение
+            x5: TIJoint | Double;0;;..\результат
           end
-          результат: TQJoint | Double;1500;0;
+          результат: TQJoint | Double;0;0;
         end
         Перекладка задания частоты: TCalc
           выражение: TIJoint | String;if(x1,x2,x3);;
           переменные: TJntGroup
             x1: TIJoint | Double;0;;..\..\..\Генератор импульсов 2с\результат
-            x2: TIJoint | Double;1500;0;..\..\ЧРП\сила тока\значение
-            x3: TIJoint | Double;1500;;..\результат
+            x2: TIJoint | Double;0;0;..\..\ЧРП\сила тока\значение
+            x3: TIJoint | Double;0;;..\результат
           end
-          результат: TQJoint | Double;1500;0;
+          результат: TQJoint | Double;0;0;
         end
         Перекладка тока: TCalc
           выражение: TIJoint | String;if(x4,if(x2,x1,x3),0);;
           переменные: TJntGroup
-            x1: TIJoint | Double;300;;..\..\ЧРП\сила тока\значение с датчика
+            x1: TIJoint | Double;0;;..\..\ЧРП\сила тока\значение с датчика
             x2: TIJoint | Double;0;;..\..\..\Генератор импульсов 2с\результат
-            x3: TIJoint | Double;300;;..\результат
+            x3: TIJoint | Double;0;;..\результат
             x4: TIJoint | Double;1;;..\..\ВВ\Состояние ВВ Включен\выход
           end
-          результат: TQJoint | Double;300;0;
+          результат: TQJoint | Double;0;0;
         end
         Пуск в местном: TKnob
           выход: TQJoint | Boolean;0;;
@@ -10257,8 +10257,8 @@ AOModeler 4.0
         255: TJntGroup
           4x37614..37615: TIJoint | LongInt;0;;..\..\..\Шифраторы\Модуль DI №1\выход
           4x37616..37617: TIJoint | LongInt;0;;..\..\..\Шифраторы\Модуль DI №2\выход
-          4x37618..37619: TIJoint | LongInt;88656896;0;..\..\..\Шифраторы\Модуль DI №3\выход
-          4x37620..37621: TMJoint | LongInt;0;;
+          4x37618..37619: TIJoint | LongInt;84462592;0;..\..\..\Шифраторы\Модуль DI №3\выход
+          4x37620..37621: TIJoint | LongInt;1090523201;;..\..\..\Шифраторы\Модуль DI №4\выход
           4x37622..37623: TIJoint | LongInt;16;;..\..\..\Шифраторы\Модуль DI №5\выход
           4x37624..37625: TIJoint | LongInt;1351385088;;..\..\..\Шифраторы\Модуль DI №6\выход
           4x37626..37627: TIJoint | LongInt;268502032;;..\..\..\Шифраторы\Модуль DI №7\выход
@@ -10267,7 +10267,7 @@ AOModeler 4.0
           4x37632..37633: TIJoint | LongInt;4227072;;..\..\..\Шифраторы\Модуль DI №10\выход
           4x37634..37635: TIJoint | LongInt;533440;0;..\..\..\Шифраторы\Модуль DI №11\выход
           4x37636..37637: TIJoint | LongInt;4260864;;..\..\..\Шифраторы\Модуль DI №12\выход
-          4x37638..37639: TIJoint | LongInt;532992;;..\..\..\Шифраторы\Модуль DI №13\выход
+          4x37638..37639: TIJoint | LongInt;528896;;..\..\..\Шифраторы\Модуль DI №13\выход
           4x37640..37641: TIJoint | LongInt;4260864;;..\..\..\Шифраторы\Модуль DI №14\выход
           4x37642..37643: TIJoint | LongInt;0;0;..\..\..\Шифраторы\Модуль DI №15\выход
           4x37644..37645: TIJoint | LongInt;0;;..\..\..\Шифраторы\Модуль DI №16\выход
@@ -10335,14 +10335,14 @@ AOModeler 4.0
           4x37768..37769: TIJoint | LongInt;0;;..\..\..\Шифраторы\Модуль DI №78\выход
           4x37770..37771: TIJoint | LongInt;0;;..\..\..\Шифраторы\Модуль DI №79\выход
           4x37772..37773: TIJoint | LongInt;0;;..\..\..\Шифраторы\Модуль DI №80\выход
-          4x37774..37775: TMJoint | LongInt;0;;
+          4x37774..37775: TMJoint | LongInt;1;;
           4x37776..37777: TMJoint | LongInt;0;;
           4x37778..37779: TMJoint | LongInt;2048;;
           4x37780..37781: TMJoint | LongInt;256;;
           4x37782..37783: TMJoint | LongInt;0;;
           4x37784..37785: TMJoint | LongInt;0;;
           4x37786..37787: TMJoint | LongInt;0;;
-          4x37788..37789: TMJoint | LongInt;34817;;
+          4x37788..37789: TMJoint | LongInt;0;;
           4x37790..37791: TMJoint | LongInt;0;;
           4x37792..37793: TMJoint | LongInt;0;;
           4x37794..37795: TMJoint | LongInt;0;;
@@ -10462,22 +10462,22 @@ AOModeler 4.0
           4x37994: TIJoint | Word;8000;;..\..\..\ИП\ПНА №036.4 Температура нефти на выходе\выход
           4x37995: TIJoint | Word;8000;;..\..\..\ИП\ПНА №036.4 Температура опорно-упорного подшипника насоса (точка 1)\выход
           4x37996: TIJoint | Word;8000;;..\..\..\ИП\ПНА №036.4 Температура опорно-упорного подшипника насоса (точка 2)\выход
-          4x37998: TIJoint | Word;12000;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Частота(аналог)\выход
+          4x37998: TIJoint | Word;4000;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Частота(аналог)\выход
           4x37999: TIJoint | Word;4000;;..\..\..\ИП\ПНА №036.4 Вибрация опорно-упорного подшипника насоса (горизонтальное направление)\выход
           4x38000: TIJoint | Word;4000;;..\..\..\ИП\ПНА №036.4 Вибрация опорно-упорного подшипника насоса (поперечное направление)\выход
           4x38002: TIJoint | Word;0;;..\..\..\ИП\ПНА №036.4 Аварийные утечки нефти через торцевое уплотнение насоса\выход
           4x38004: TIJoint | Word;4000;;..\..\..\ИП\ПНА №036.4 Давление нефти на входе\выход
           4x38005: TIJoint | Word;4000;;..\..\..\ИП\ПНА №036.4 Давление нефти на выходе\выход
           4x38006: TIJoint | Word;4000;;..\..\..\ИП\ПНА №036.4 Перепад давления нефти на фильтр-решетке\выход
-          4x38008: TIJoint | Word;20000;;..\..\..\МНС\ПНА №35.4\Сила тока\выход
-          4x38010: TIJoint | Word;12000;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Текущее задание частоты(аналог)\выход
+          4x38008: TIJoint | Word;4000;;..\..\..\МНС\ПНА №35.4\Сила тока\выход
+          4x38010: TIJoint | Word;4000;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Текущее задание частоты(аналог)\выход
           4x01104: TIJoint | Word;76;0;..\..\..\Шифраторы\ЧРП 1\выход
-          4x01101: TMJoint | Word;4096;;
+          4x01101: TMJoint | Word;0;;
           4x01103: TIJoint | Word;0;;..\..\..\МНС\ПНА №034.1\ЧРП Сигналы\Текущее задание частоты(интерфейс)\выход
           4x01106: TIJoint | Word;0;;..\..\..\МНС\ПНА №34.2\ЧРП Сигналы\Текущее задание частоты(интерфейс)\выход
-          4x01113: TIJoint | Word;70;;..\..\..\Шифраторы\ЧРП 4\выход
-          4x01112: TIJoint | Word;1500;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Текущее задание частоты(интерфейс)\выход
-          4x01111: TIJoint | Word;1500;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Частота(Интерфейс)\выход
+          4x01113: TIJoint | Word;76;;..\..\..\Шифраторы\ЧРП 4\выход
+          4x01112: TIJoint | Word;0;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Текущее задание частоты(интерфейс)\выход
+          4x01111: TIJoint | Word;0;;..\..\..\МНС\ПНА №35.4\ЧРП Сигналы\Частота(Интерфейс)\выход
           4x01110: TIJoint | Word;76;;..\..\..\Шифраторы\ЧРП 3\выход
           4x01109: TIJoint | Word;0;;..\..\..\МНС\ПНА №34.3\ЧРП Сигналы\Текущее задание частоты(интерфейс)\выход
           4x01108: TIJoint | Word;0;;..\..\..\МНС\ПНА №34.3\ЧРП Сигналы\Частота(Интерфейс)\выход
